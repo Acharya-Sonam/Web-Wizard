@@ -20,7 +20,6 @@ body {
   overflow-x: hidden;
 }
 
-/* NAV */
 nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
   display: flex; align-items: center; justify-content: space-between;
@@ -54,7 +53,6 @@ nav {
 }
 .nav-cta:hover { background: #a93226; }
 
-/* HERO */
 .hero {
   min-height: 100vh;
   display: flex; flex-direction: column; justify-content: center;
@@ -149,7 +147,6 @@ nav {
   50% { opacity: 1; transform: scaleY(0.6); }
 }
 
-/* TICKER */
 .ticker {
   background: var(--crimson); padding: 0.6rem 0;
   overflow: hidden; white-space: nowrap;
@@ -169,7 +166,6 @@ nav {
   to { transform: translateX(-50%); }
 }
 
-/* SECTION BASE */
 section { padding: 6rem 3rem; }
 .section-label {
   font-family: 'Space Mono', monospace;
@@ -184,7 +180,6 @@ section { padding: 6rem 3rem; }
   margin-bottom: 1.5rem;
 }
 
-/* THREATS SECTION */
 .threats { background: var(--deep); }
 .threats-grid {
   display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -208,7 +203,6 @@ section { padding: 6rem 3rem; }
 .threat-np { font-family: 'Tiro Devanagari Hindi', serif; font-size: 0.85rem; color: var(--gold); margin-bottom: 0.8rem; }
 .threat-desc { font-size: 0.88rem; line-height: 1.7; color: rgba(245,240,232,0.6); }
 
-/* QUIZ TEASER */
 .quiz-teaser { background: linear-gradient(135deg, #1a0505 0%, #0d0d0d 100%); position: relative; overflow: hidden; }
 .quiz-teaser-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
 .quiz-visual { position: relative; display: flex; justify-content: center; }
@@ -221,7 +215,6 @@ section { padding: 6rem 3rem; }
 .quiz-content .section-title span { color: var(--crimson); }
 .quiz-content p { color: rgba(245,240,232,0.7); line-height: 1.8; margin-bottom: 2rem; }
 
-/* RIGHTS PREVIEW */
 .rights-preview { background: var(--ink); }
 .rights-list { margin-top: 3rem; display: flex; flex-direction: column; gap: 0; }
 .right-row { display: flex; align-items: center; gap: 2rem; padding: 1.8rem 0; border-bottom: 1px solid rgba(245,240,232,0.06); transition: background 0.2s; cursor: default; position: relative; }
@@ -232,7 +225,6 @@ section { padding: 6rem 3rem; }
 .right-arrow { color: var(--muted); font-size: 1.2rem; }
 .right-row:hover .right-arrow { color: var(--crimson); }
 
-/* CTA BANNER */
 .cta-banner { background: var(--crimson); padding: 5rem 3rem; text-align: center; position: relative; overflow: hidden; }
 .cta-banner::before { content: 'सुरक्षित'; font-family: 'Tiro Devanagari Hindi', serif; font-size: 15rem; color: rgba(0,0,0,0.1); position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); white-space: nowrap; pointer-events: none; }
 .cta-banner h2 { font-size: clamp(2rem, 5vw, 4rem); font-weight: 800; margin-bottom: 1rem; }
@@ -240,23 +232,18 @@ section { padding: 6rem 3rem; }
 .btn-white { background: var(--white); color: var(--crimson); padding: 1rem 2.5rem; border-radius: 2px; font-weight: 700; font-size: 0.95rem; text-decoration: none; display: inline-block; transition: transform 0.2s, box-shadow 0.2s; }
 .btn-white:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
 
-/* FOOTER */
 footer { background: #080808; padding: 3rem; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(192,57,43,0.2); flex-wrap: wrap; gap: 1rem; }
 .footer-logo { font-family: 'Space Mono', monospace; color: var(--crimson); font-size: 0.9rem; }
 .footer-links { display: flex; gap: 2rem; }
 .footer-links a { color: var(--muted); text-decoration: none; font-size: 0.8rem; transition: color 0.2s; }
 .footer-links a:hover { color: var(--sand); }
 .footer-copy { font-size: 0.75rem; color: var(--muted); }
-
-/* HAMBURGER */
 .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; }
 .hamburger span { display: block; width: 24px; height: 2px; background: var(--sand); transition: 0.3s; }
 
-/* ANIMATIONS */
 .fade-up { opacity: 0; transform: translateY(30px); transition: opacity 0.7s, transform 0.7s; }
 .fade-up.visible { opacity: 1; transform: translateY(0); }
 
-/* RESPONSIVE */
 @media (max-width: 768px) {
   nav { padding: 1rem 1.5rem; }
   .nav-links, .nav-cta { display: none; }

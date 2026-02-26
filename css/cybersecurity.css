@@ -22,7 +22,7 @@
     .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; }
     .hamburger span { display: block; width: 24px; height: 2px; background: var(--sand); transition: 0.3s; }
 
-    /* PAGE HEADER */
+ 
     .page-header {
       padding: 9rem 3rem 4rem; background: var(--deep);
       position: relative; overflow: hidden;
@@ -51,7 +51,7 @@
     .section-label::before { content: '//'; color: var(--crimson); }
     .section-title { font-size: clamp(1.8rem, 3vw, 2.8rem); font-weight: 800; margin-bottom: 1.5rem; line-height: 1.1; }
 
-    /* TIPS GRID */
+
     .tips-section { background: var(--deep); }
     .tips-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 3rem; }
     .tip-card {
@@ -72,7 +72,6 @@
       border-radius: 2px; font-size: 0.7rem; color: var(--teal); letter-spacing: 0.1em;
     }
 
-    /* ACCORDION */
     .faq-section { background: var(--ink); }
     .faq-list { margin-top: 2.5rem; display: flex; flex-direction: column; gap: 0; }
     .faq-item { border-bottom: 1px solid rgba(245,240,232,0.07); }
@@ -93,7 +92,7 @@
     }
     .faq-item.open .faq-a { max-height: 300px; padding-bottom: 1.5rem; }
 
-    /* QUIZ */
+ 
     .quiz-section { background: var(--deep); }
     .quiz-container {
       max-width: 700px; margin: 3rem auto 0;
@@ -160,7 +159,6 @@
     }
     .btn-restart:hover { border-color: var(--crimson); color: var(--crimson); }
 
-    /* FOOTER */
     footer {
       background: #080808; padding: 3rem;
       display: flex; justify-content: space-between; align-items: center;

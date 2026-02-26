@@ -1,9 +1,6 @@
- // Hamburger
   document.getElementById('hamburger').addEventListener('click', () => {
     document.getElementById('navLinks').classList.toggle('open');
   });
-
-  // FAQ Accordion
   document.querySelectorAll('.faq-q').forEach(btn => {
     btn.addEventListener('click', () => {
       const item = btn.parentElement;
@@ -13,7 +10,7 @@
     });
   });
 
-  // Fade-up
+  
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((e, i) => {
       if (e.isIntersecting) setTimeout(() => e.target.classList.add('visible'), i * 80);
@@ -21,7 +18,6 @@
   }, { threshold: 0.1 });
   document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 
-  // QUIZ DATA
   const questions = [
     {
       q: "You receive an SMS saying 'Your NTC SIM will be deactivated. Click here to verify.' What should you do?",
@@ -33,7 +29,7 @@
     {
       q: "Which password is the strongest?",
       np: "कुन पासवर्ड सबैभन्दा बलियो छ?",
-      opts: ["9841234567", "Ram@1990", "Everest#Chai#2025!", "password123"],
+      opts: ["984123217", "Sonam@1990", "Everest#Damak#2025!", "password123"],
       correct: 2,
       feedback: "✓ Correct! 'Everest#Chai#2025!' is long (17 characters), uses uppercase, lowercase, numbers, and symbols. Length and variety make passwords strong. Phone numbers and common words are very easy to crack."
     },
